@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RoboTech Nexus</title>
+    <meta name="description" content="Get in touch with RoboTech Nexus for inquiries about our products, research, or collaboration opportunities.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <svg class="preloader-logo" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="#22d3ee" stroke-width="2" fill="none" />
+                <circle class="preloader-circle" cx="50" cy="50" r="30" stroke="#a855f7" stroke-width="4" fill="none" />
+                <path class="preloader-gear" d="M50 25 L55 35 L65 35 L60 45 L65 55 L55 55 L50 65 L45 55 L35 55 L40 45 L35 35 L45 35 Z" fill="#22d3ee" />
+            </svg>
+            <p>Loading RoboTech Nexus</p>
+        </div>
+    </div>
+
+    <!-- Canvas Background -->
+    <canvas id="canvas-background"></canvas>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="#22d3ee" stroke-width="2" fill="none" />
+                    <path d="M50 25 L55 35 L65 35 L60 45 L65 55 L55 55 L50 65 L45 55 L35 55 L40 45 L35 35 L45 35 Z" fill="#22d3ee" />
+                </svg>
+                <span>RoboTech Nexus</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Arduino</a>
+                            <a href="#" class="dropdown-item">Sensors</a>
+                            <a href="#" class="dropdown-item">Actuators</a>
+                            <a href="#" class="dropdown-item">All Products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Research <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">AI</a>
+                            <a href="#" class="dropdown-item">Drones</a>
+                            <a href="#" class="dropdown-item">Automation</a>
+                            <a href="#" class="dropdown-item">All Research</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="logo">RoboTech Nexus</a>
+                <button class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <span class="mobile-nav-heading">Products</span>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Arduino</a></li>
+                        <li><a href="#">Sensors</a></li>
+                        <li><a href="#">Actuators</a></li>
+                        <li><a href="#">All Products</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav-item">
+                    <span class="mobile-nav-heading">Research</span>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">Drones</a></li>
+                        <li><a href="#">Automation</a></li>
+                        <li><a href="#">All Research</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="contact.html" class="active">Contact</a>
+                </li>
+            </ul>
+            <div class="mobile-cart">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <span>View Cart</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-aos="fade-up">Contact Us</h1>
+            <p class="page-description" data-aos="fade-up" data-aos-delay="100">
+                Get in touch with our team for inquiries, support, or collaboration opportunities.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>123 Innovation Drive<br>Tech District<br>San Francisco, CA 94105</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567<br>Mon-Fri: 9am - 6pm</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@robotechnexus.com<br>support@robotechnexus.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm<br>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-left">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <div class="form-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <div class="form-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="research">Research Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="form-border"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <div class="form-border"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" data-aos="fade-up">
+        <div class="map-container">
+            <div class="map-overlay">
+                <div class="map-card">
+                    <h3>Visit Our Headquarters</h3>
+                    <p>123 Innovation Drive<br>Tech District<br>San Francisco, CA 94105</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-sm">Get Directions</a>
+                </div>
+            </div>
+            <div class="map-frame">
+                <!-- Replace with actual Google Maps embed code -->
+                <div class="map-placeholder">
+                    <div class="map-grid">
+                        <div class="map-grid-line horizontal"></div>
+                        <div class="map-grid-line horizontal"></div>
+                        <div class="map-grid-line horizontal"></div>
+                        <div class="map-grid-line vertical"></div>
+                        <div class="map-grid-line vertical"></div>
+                        <div class="map-grid-line vertical"></div>
+                    </div>
+                    <div class="map-marker">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="map-marker-pulse"></div>
+                    </div>
+                    <div class="map-label">RoboTech Nexus HQ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="badge">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">
+                    Find answers to common questions about our products, shipping, and support.
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>How long does shipping take?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard shipping within the US takes 3-5 business days. International shipping typically takes 7-14 business days, depending on the destination country and customs processing.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>Do you offer technical support for products?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide technical support for all our products. You can reach our support team via email at support@robotechnexus.com or through the contact form on this page.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>Can I return or exchange products?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept returns within 30 days of purchase for unused and unopened products. For defective items, please contact our support team for assistance with replacements or repairs.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>How can I collaborate on research projects?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're always open to research collaborations with academic institutions, industry partners, and independent researchers. Please contact us with details about your project and areas of interest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="badge">Stay Updated</span>
+                <h2 class="section-title">Join Our Newsletter</h2>
+                <p class="section-description">
+                    Subscribe to receive updates on the latest robotics technology, research breakthroughs, and exclusive offers.
+                </p>
+            </div>
+
+            <div class="newsletter-form-container" data-aos="fade-up">
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    <p class="form-disclaimer">
+                        By subscribing, you agree to our Privacy Policy and consent to receive updates from RoboTech Nexus.
+                    </p>
+                </form>
+                <div id="newsletter-message" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">RoboTech Nexus</a>
+                    <p class="footer-description">
+                        Building Tomorrow's Robotics, Today. Cutting-edge components and research for the future of automation.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Arduino & Microcontrollers</a></li>
+                        <li><a href="#">Sensors & Modules</a></li>
+                        <li><a href="#">Motors & Actuators</a></li>
+                        <li><a href="#">Robotics Kits</a></li>
+                        <li><a href="#">Accessories & Parts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Research</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Artificial Intelligence</a></li>
+                        <li><a href="#">Drone Technology</a></li>
+                        <li><a href="#">Industrial Automation</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Academic Collaborations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© <span id="current-year"></span> RoboTech Nexus. All rights reserved.</p>
+                <div class="footer-mascot">
+                    <div class="robot-mascot">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Robot head -->
+                            <rect x="25" y="20" width="50" height="40" rx="5" fill="#22d3ee" />
+                            <circle cx="40" cy="35" r="5" fill="#000" class="robot-eye" />
+                            <circle cx="60" cy="35" r="5" fill="#000" class="robot-eye robot-eye-wink" />
+                            <rect x="40" y="50" width="20" height="5" rx="2" fill="#000" />
+
+                            <!-- Antenna -->
+                            <rect x="48" y="10" width="4" height="10" fill="#a855f7" />
+                            <circle cx="50" cy="10" r="5" fill="#a855f7" />
+
+                            <!-- Robot body -->
+                            <rect x="35" y="60" width="30" height="25" rx="3" fill="#22d3ee" />
+                            <rect x="25" y="70" width="10" height="5" fill="#a855f7" />
+                            <rect x="65" y="70" width="10" height="5" fill="#a855f7" />
+                        </svg>
+                    </div>
+                    <p>Designed with ❤️ by RoboTech Nexus</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup">
+        <div class="cart-popup-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/canvas.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

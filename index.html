@@ -6,6 +6,7 @@
 <title>RoboTech Nexus - Innovate, Build, Research</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1499265096006000640/ZhEnSTch_400x400.jpg" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -892,6 +893,13 @@ color: #CBD5E1; /* Darker text for footer links */
   90% { clip-path: inset(0% 0% 85% 0%); }
   100% { transform: translate(-3px, 6px); clip-path: inset(85% 0% 0% 0%); }
 }
+#ft-color {
+  background-color: #00000083;
+}
+/* .link-color > a:hover{
+  color: #00FFFF;
+
+} */
 </style>
 </head>
 <body>
@@ -918,67 +926,69 @@ color: #CBD5E1; /* Darker text for footer links */
 
 <!-- Navigation -->
 <nav class="nav-glass fixed top-0 left-0 right-0 z-50 py-4">
-<div class="container mx-auto px-6 flex items-center justify-between">
-<a href="#" class="text-2xl font-orbitron flex items-center">
-  <span class="text-primary font-bold mr-1">Robo</span>
-  <span class="text-white">Horizon</span>
-  <!-- <span class="text-xs text-secondary ml-2 mt-1">Innovate • Build • Research</span> -->
-</a>
-<div class="hidden md:flex items-center space-x-8">
-<div class="dropdown-trigger relative group">
-<button class="text-gray-300 hover:text-primary flex items-center">
-Products
-<span class="w-4 h-4 flex items-center justify-center ml-1">
-<i class="ri-arrow-down-s-line"></i>
-</span>
-</button>
-<div class="dropdown absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded shadow-lg z-10">
-<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Arduino</a>
-<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Sensors</a>
-<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Motors</a>
-<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Robotic Parts</a>
-</div>
-</div>
-<div class="dropdown-trigger relative group">
-<button class="text-gray-300 hover:text-primary flex items-center">
-Research
-<span class="w-4 h-4 flex items-center justify-center ml-1">
-<i class="ri-arrow-down-s-line"></i>
-</span>
-</button>
-<div class="dropdown absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded shadow-lg z-10">
-<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">AI</a>
-<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Drones</a>
-<a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Automation</a>
-</div>
-</div>
-<a href="./About.html" class="text-gray-300 hover:text-primary">About</a>
-<a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a>
-</div>
-<div class="flex items-center space-x-4">
-<div class="relative">
-<input type="text" placeholder="Search..." class="search-input py-2 pl-8 pr-4 rounded-full text-sm w-40 md:w-60">
-<span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 flex items-center justify-center">
-<i class="ri-search-line"></i>
-</span>
-</div>
-<div class="relative">
-<button class="text-gray-300 hover:text-primary w-10 h-10 flex items-center justify-center">
-<i class="ri-shopping-cart-line ri-lg"></i>
-</button>
-<span class="absolute -top-1 -right-1 bg-primary text-gray-900 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">3</span>
-</div>
-<button class="md:hidden text-gray-300 hover:text-primary w-10 h-10 flex items-center justify-center">
-<i class="ri-menu-line ri-lg"></i>
-</button>
-</div>
-</div>
-</nav>
+  <div class="container mx-auto px-6 flex items-center justify-between">
+  <a href="index.html" class="text-2xl font-orbitron flex items-center">
+    <span class="text-primary font-bold mr-1">Robo</span>
+    <span class="text-white">Horizon</span>
+    <!-- <span class="text-xs text-secondary ml-2 mt-1">Innovate • Build • Research</span> -->
+  </a>
+  <div class="hidden md:flex items-center space-x-8">
+  <div class="dropdown-trigger relative group">
+  <button class="text-gray-300 hover:text-primary flex items-center">
+  <a href="Product.html" class="text-gray-300 hover:text-primary">
+  Products
+  </a>
+  <span class="w-4 h-4 flex items-center justify-center ml-1">
+  <!-- <i class="ri-arrow-down-s-line"></i> -->
+  </span>
+  </button>
+  <div class="dropdown absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded shadow-lg z-10">
+  <!-- <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Arduino</a>
+  <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Sensors</a>
+  <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Motors</a>
+  <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Robotic Parts</a> -->
+  </div>
+  </div>
+  <div class="dropdown-trigger relative group">
+  <button class="text-gray-300 hover:text-primary flex items-center">
+  <a href="Research.html" class="text-gray-300 hover:text-primary">Research</a>
+  <span class="w-4 h-4 flex items-center justify-center ml-1">
+  <!-- <i class="ri-arrow-down-s-line"></i> -->
+  </span>
+  </button>
+  <div class="dropdown absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded shadow-lg z-10">
+  <!-- <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">AI</a>
+  <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Drones</a>
+  <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Automation</a> -->
+  </div>
+  </div>
+  <a href="./About.html" class="text-gray-300 hover:text-primary">About</a>
+  <a href="contact.html" class="text-gray-300 hover:text-primary">Contact</a>
+  </div>
+  <div class="flex items-center space-x-4">
+  <div class="relative">
+  <input type="text" placeholder="Search..." class="search-input py-2 pl-8 pr-4 rounded-full text-sm w-40 md:w-60">
+  <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4 flex items-center justify-center">
+  <i class="ri-search-line"></i>
+  </span>
+  </div>
+  <div class="relative">
+  <button class="text-gray-300 hover:text-primary w-10 h-10 flex items-center justify-center">
+  <i class="ri-shopping-cart-line ri-lg"></i>
+  </button>
+  <span class="absolute -top-1 -right-1 bg-primary text-gray-900 rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">3</span>
+  </div>
+  <button class="md:hidden text-gray-300 hover:text-primary w-10 h-10 flex items-center justify-center">
+  <i class="ri-menu-line ri-lg"></i>
+  </button>
+  </div>
+  </div>
+  </nav>
 <!-- Hero Section -->
 <section class="relative min-h-screen flex items-center overflow-hidden">
 <div class="absolute inset-0 w-full h-full z-0">
     <video autoplay muted loop class="object-cover w-full h-full">
-        <source src="./Untitled design.mp4" type="video/mp4">
+        <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
@@ -997,7 +1007,7 @@ Research
 <div class="rotating-text-item title-font text-2xl md:text-3xl font-medium">Build</div>
 <div class="rotating-text-item title-font text-2xl md:text-3xl font-medium">Research</div>
 </div>
-<p class="text-lg md:text-xl mb-10 max-w-lg mx-auto md:mx-0 animate-float-up" style="animation-delay: 0.4s;">
+<p class="text-lg md:text-xl mb-10 max-w-lg mx-auto md:mx-0 animate-float-up" style="animation-delay: 0.4s;" >
 Pioneering the future of robotics with cutting-edge technology, innovative research, and premium components for your next breakthrough project.
 </p>
 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center md:justify-start animate-float-up" style="animation-delay: 0.6s;">
@@ -1020,22 +1030,22 @@ Explore Research
 <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-gray-700 rounded-full">
 <i class="ri-shopping-bag-line ri-2x text-primary"></i>
 </div>
-<h3 class="counter-value text-4xl font-bold mb-2 text-white" data-target="12500">0</h3>
-<p class="text-gray-400">Products Sold</p>
+<h3 class="counter-value text-4xl font-bold mb-2 text-white" style="font-family: 'Orbitron', sans-serif;" data-target="12500">0</h3>
+<p class="text-gray-400" style="font-family: 'Orbitron', sans-serif;">Products Sold</p>
 </div>
 <div class="bg-gray-800 rounded-lg p-8 text-center transform transition-transform hover:scale-105">
 <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-gray-700 rounded-full">
 <i class="ri-flask-line ri-2x text-primary"></i>
 </div>
-<h3 class="counter-value text-4xl font-bold mb-2 text-white" data-target="87">0</h3>
-<p class="text-gray-400">Research Projects</p>
+<h3 class="counter-value text-4xl font-bold mb-2 text-white" data-target="87" style="font-family: 'Orbitron', sans-serif;">0</h3>
+<p class="text-gray-400" style="font-family: 'Orbitron', sans-serif;">Research Projects</p>
 </div>
 <div class="bg-gray-800 rounded-lg p-8 text-center transform transition-transform hover:scale-105">
 <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-gray-700 rounded-full">
 <i class="ri-user-line ri-2x text-primary"></i>
 </div>
-<h3 class="counter-value text-4xl font-bold mb-2 text-white" data-target="5280">0</h3>
-<p class="text-gray-400">Active Users</p>
+<h3 class="counter-value text-4xl font-bold mb-2 text-white" data-target="5280" style="font-family: 'Orbitron', sans-serif;">0</h3>
+<p class="text-gray-400" style="font-family: 'Orbitron', sans-serif;">Active Users</p>
 </div>
 </div>
 </div>
@@ -1289,9 +1299,10 @@ Add to Cart
 </div>
 </div>
 <div class="mt-12 text-center">
-<button class="bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-8 rounded-button transition-all whitespace-nowrap">
+<a href="Product.html"><button class="bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-8 rounded-button transition-all whitespace-nowrap">
 View All Products
 </button>
+</a>
 </div>
 </div>
 </div>
@@ -1421,7 +1432,7 @@ Watch Demo
 </div>
 </div>
 <div class="text-center mt-8">
-<a href="./All-Research-Projects-Overview.html" data-readdy="true">
+<a href="./Research.html" data-readdy="true">
 <button class="bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-8 rounded-button transition-all whitespace-nowrap">
 View All Research
 </button>
@@ -1495,14 +1506,14 @@ Subscribe
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-gray-800 pt-16 pb-8">
+<footer class="bg-gray-800 pt-16 pb-8" id="ft-color">
 <div class="container mx-auto px-6">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
 <div>
 <a href="#" class="text-2xl font-orbitron flex items-center mb-6">
   <span class="text-primary font-bold mr-1">Robo</span>
   <span class="text-white">Horizon</span>
-  <span class="text-xs text-secondary ml-2 mt-1">Innovate • Build • Research</span>
+  <!-- <span class="text-xs text-secondary ml-2 mt-1">Innovate • Build • Research</span> -->
 </a>
 <p class="text-gray-400 mb-6">Pioneering the future of robotics with cutting-edge technology and innovative research.</p>
 <div class="flex space-x-4">
@@ -1589,10 +1600,54 @@ Subscribe
 </div>
 </div>
 </footer>
+
 <!-- Robot Mascot (Floating) -->
-<div class="fixed bottom-6 right-6 z-50 robot-mascot">
-<div class="w-16 h-16 md:w-20 md:h-20 bg-gray-800 rounded-full flex items-center justify-center shadow-lg cursor-pointer">
+<canvas id="robotCanvas" width="120" height="120"></canvas>
+<div class="fixed bottom-6 right-6 z-[9999] robot-mascot">
+<div id="robotMascot" class="w-16 h-16 md:w-20 md:h-20 bg-gray-800 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-gray-700 transition-all">
 <i class="ri-robot-fill ri-2x text-primary"></i>
+</div>
+<!-- Chat Dialog -->
+<div id="chatDialog" class="hidden absolute bottom-24 right-0 w-80 md:w-96 bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+<div class="p-4 bg-gray-700 flex justify-between items-center border-b border-gray-600">
+<div class="flex items-center">
+<div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-20 rounded-full mr-3">
+<i class="ri-robot-fill text-primary"></i>
+</div>
+<h3 class="font-semibold">RoboTech Assistant</h3>
+</div>
+<div class="flex items-center gap-2">
+<button id="minimizeChat" class="w-8 h-8 flex items-center justify-center hover:bg-gray-600 rounded-full transition-all">
+<i class="ri-subtract-line"></i>
+</button>
+<button id="closeChat" class="w-8 h-8 flex items-center justify-center hover:bg-gray-600 rounded-full transition-all">
+<i class="ri-close-line"></i>
+</button>
+</div>
+</div>
+<div id="chatMessages" class="h-80 overflow-y-auto p-4 space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 flex items-center justify-center bg-primary bg-opacity-20 rounded-full flex-shrink-0">
+<i class="ri-robot-fill text-primary text-sm"></i>
+</div>
+<div class="bg-gray-700 rounded-lg p-3 text-sm max-w-[80%]">
+Hello! How can I help you with our research projects today?
+</div>
+</div>
+</div>
+<div class="p-4 bg-gray-700 border-t border-gray-600">
+<div class="flex flex-wrap gap-2 mb-3">
+<button class="quick-action-btn bg-gray-600 hover:bg-gray-500 text-sm px-3 py-1 rounded-full transition-all">Latest Research</button>
+<button class="quick-action-btn bg-gray-600 hover:bg-gray-500 text-sm px-3 py-1 rounded-full transition-all">AI Projects</button>
+<button class="quick-action-btn bg-gray-600 hover:bg-gray-500 text-sm px-3 py-1 rounded-full transition-all">Contact Team</button>
+</div>
+<div class="flex gap-2">
+<input id="chatInput" type="text" placeholder="Type your message..." class="flex-1 bg-gray-600 border-none rounded text-sm p-3">
+<button id="sendMessage" class="bg-primary text-gray-900 px-4 rounded hover:bg-opacity-80 transition-all">
+<i class="ri-send-plane-fill"></i>
+</button>
+</div>
+</div>
 </div>
 </div>
 <script>
@@ -1972,5 +2027,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 4000);
 });
 </script>
+<script src="Research.js"></script>
 </body>
 </html>

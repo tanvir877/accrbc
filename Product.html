@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1499265096006000640/ZhEnSTch_400x400.jpg" type="image/x-icon">
 <link rel="stylesheet" href="./product.css">
 <!-- <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
@@ -122,15 +123,17 @@ transform: translateX(24px);
 <!-- Header -->
 <header class="bg-[#0f172a] py-4 px-6">
 <div class="container mx-auto flex items-center justify-between">
-<a href="Homepage.html" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+  <a href="index.html" class="text-2xl font-orbitron flex items-center">
+    <span class="text-primary font-bold mr-1">Robo</span>
+    <span class="text-white">Horizon</span>
 <nav class="flex items-center space-x-8">
 <div class="relative group">
 <button class="flex items-center space-x-1 text-white hover:text-primary transition">
-<span>Products</span>
-<i class="ri-arrow-down-s-line"></i>
+<span style="font-size: medium;">Products</span>
+<!-- <i class="ri-arrow-down-s-line"></i> -->
 </button>
 </div>
-<a href="Research.html" class="text-white hover:text-primary transition">Research</a>
+<a href="Research.html" class="text-white hover:text-primary transition">Research </a>
 <a href="About.html" class="text-white hover:text-primary transition">About</a>
 <a href="Contact.html" class="text-white hover:text-primary transition">Contact</a>
 </nav>
@@ -145,7 +148,7 @@ transform: translateX(24px);
 <i class="ri-shopping-cart-line text-xl"></i>
 <span class="absolute -top-1 -right-1 bg-primary text-[#0f172a] text-xs w-5 h-5 flex items-center justify-center rounded-full">2</span>
 </div>
-<a href="Homepage.html" class="flex items-center text-white hover:text-primary transition">
+<a href="index.html" class="flex items-center text-white hover:text-primary transition">
 <i class="ri-arrow-left-line mr-1"></i>
 <span>Back to Home</span>
 </a>
@@ -741,77 +744,101 @@ Showing 1-12 of 48 products
 </div>
 </main>
 <!-- Footer -->
-<footer class="bg-[#0f2440] mt-16 py-10" id="ft-color">
-<div class="container mx-auto px-4">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<div>
-<h3 class="text-xl font-['Pacifico'] text-primary mb-4">logo</h3>
-<p class="text-gray-400 mb-4">Your one-stop shop for all electronics, robotics, and DIY project components. Quality products at competitive prices.</p>
-<div class="flex space-x-4">
-<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#162a45] text-white hover:bg-primary hover:text-[#0a192f] transition">
-<i class="ri-facebook-fill"></i>
-</a>
-<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#162a45] text-white hover:bg-primary hover:text-[#0a192f] transition">
-<i class="ri-twitter-x-fill"></i>
-</a>
-<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#162a45] text-white hover:bg-primary hover:text-[#0a192f] transition">
-<i class="ri-instagram-fill"></i>
-</a>
-<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#162a45] text-white hover:bg-primary hover:text-[#0a192f] transition">
-<i class="ri-youtube-fill"></i>
-</a>
-</div>
-</div>
-<div>
-<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Home</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Products</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Categories</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">New Arrivals</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Best Sellers</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Deals & Offers</a></li>
-</ul>
-</div>
-<div>
-<h3 class="text-lg font-semibold mb-4">Customer Service</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-gray-400 hover:text-primary transition">My Account</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Track Order</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Shipping Policy</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Returns & Refunds</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">FAQ</a></li>
-<li><a href="#" class="text-gray-400 hover:text-primary transition">Contact Us</a></li>
-</ul>
-</div>
-<div>
-<h3 class="text-lg font-semibold mb-4">Newsletter</h3>
-<p class="text-gray-400 mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
-<div class="flex mb-4">
-<input type="email" placeholder="Your email address" class="bg-[#162a45] text-white py-2 px-4 rounded-l-button w-full border-none focus:outline-none focus:ring-2 focus:ring-primary">
-<button class="bg-primary text-[#0a192f] px-4 py-2 rounded-r-button font-medium !rounded-r-button whitespace-nowrap">Subscribe</button>
-</div>
-<div class="flex items-center space-x-3">
-<span class="text-gray-400">We accept:</span>
-<div class="flex space-x-2">
-<i class="ri-visa-fill text-2xl text-white"></i>
-<i class="ri-mastercard-fill text-2xl text-white"></i>
-<i class="ri-paypal-fill text-2xl text-white"></i>
-<i class="ri-amazon-pay-fill text-2xl text-white"></i>
-</div>
-</div>
-</div>
-</div>
-<div class="border-t border-[#1e3a5e] mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Electronics Shop. All rights reserved.</p>
-<div class="flex space-x-6">
-<a href="#" class="text-gray-400 hover:text-primary text-sm transition">Privacy Policy</a>
-<a href="#" class="text-gray-400 hover:text-primary text-sm transition">Terms of Service</a>
-<a href="#" class="text-gray-400 hover:text-primary text-sm transition">Cookie Policy</a>
-</div>
-</div>
-</div>
-</footer>
+<footer class="bg-gray-800 pt-16 pb-8" id="ft-color">
+    <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+    <div>
+    <a href="#" class="text-2xl font-orbitron flex items-center mb-6">
+      <span class="text-primary font-bold mr-1">Robo</span>
+      <span class="text-white">Horizon</span>
+      <!-- <span class="text-xs text-secondary ml-2 mt-1">Innovate • Build • Research</span> -->
+    </a>
+    <p class="text-gray-400 mb-6">Pioneering the future of robotics with cutting-edge technology and innovative research.</p>
+    <div class="flex space-x-4">
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-white hover:bg-primary hover:text-gray-900 transition-all">
+    <i class="ri-twitter-x-line"></i>
+    </a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-white hover:bg-primary hover:text-gray-900 transition-all">
+    <i class="ri-facebook-fill"></i>
+    </a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-white hover:bg-primary hover:text-gray-900 transition-all">
+    <i class="ri-instagram-line"></i>
+    </a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full text-white hover:bg-primary hover:text-gray-900 transition-all">
+    <i class="ri-linkedin-fill"></i>
+    </a>
+    </div>
+    </div>
+    <div>
+    <h3 class="text-lg font-semibold mb-6">Products</h3>
+    <ul class="space-y-3">
+    <li><a href="#" class="text-gray-400 hover:text-primary">Arduino</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Sensors</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Motors</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Robotic Parts</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Development Kits</a></li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="text-lg font-semibold mb-6">Research</h3>
+    <ul class="space-y-3">
+    <li><a href="#" class="text-gray-400 hover:text-primary">AI & Machine Learning</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Drone Technology</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Automation Systems</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Computer Vision</a></li>
+    <li><a href="#" class="text-gray-400 hover:text-primary">Publications</a></li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="text-lg font-semibold mb-6">Contact</h3>
+    <ul class="space-y-3">
+    <li class="flex items-start">
+    <span class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3">
+    <i class="ri-map-pin-line"></i>
+    </span>
+    <span class="text-gray-400">123 Innovation Drive, Tech City, TC 54321</span>
+    </li>
+    <li class="flex items-start">
+    <span class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3">
+    <i class="ri-mail-line"></i>
+    </span>
+    <span class="text-gray-400">info@robotechnexus.com</span>
+    </li>
+    <li class="flex items-start">
+    <span class="w-5 h-5 flex items-center justify-center text-primary mt-1 mr-3">
+    <i class="ri-phone-line"></i>
+    </span>
+    <span class="text-gray-400">+1 (555) 123-4567</span>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-700">
+    <div class="mb-4 md:mb-0">
+    <p class="text-gray-500 text-sm">© 2025 RoboTech Nexus. All rights reserved.</p>
+    </div>
+    <div class="flex items-center space-x-6">
+    <a href="#" class="text-gray-500 text-sm hover:text-gray-300">Privacy Policy</a>
+    <a href="#" class="text-gray-500 text-sm hover:text-gray-300">Terms of Service</a>
+    <a href="#" class="text-gray-500 text-sm hover:text-gray-300">Cookie Policy</a>
+    </div>
+    <div class="mt-4 md:mt-0 flex items-center space-x-4">
+    <span class="text-gray-500 text-sm">Payment Methods:</span>
+    <span class="w-8 h-8 flex items-center justify-center text-gray-400">
+    <i class="ri-visa-fill ri-lg"></i>
+    </span>
+    <span class="w-8 h-8 flex items-center justify-center text-gray-400">
+    <i class="ri-mastercard-fill ri-lg"></i>
+    </span>
+    <span class="w-8 h-8 flex items-center justify-center text-gray-400">
+    <i class="ri-paypal-fill ri-lg"></i>
+    </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+    
 <!-- Back to top button -->
 <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center bg-primary text-[#0a192f] rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
 <i class="ri-arrow-up-line text-xl"></i>
